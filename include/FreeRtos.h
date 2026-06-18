@@ -8,12 +8,13 @@ extern "C" {
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "queue.h"
-#include "semphr.h"
-#include "timers.h"
+#include <freertos/FreeRTOS.h>
+#include <freertos/task.h>
+#include <freertos/queue.h>
+#include <freertos/semphr.h>
+#include <freertos/timers.h>
+
+void setupTasks();
 
 #ifdef __cplusplus
 }
